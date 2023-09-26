@@ -12,7 +12,7 @@ title=driver.find_element(By.CLASS_NAME,"container").find_element(By.TAG_NAME,"h
 image=driver.find_element(By.CLASS_NAME,"news-media").find_element(By.TAG_NAME,"img")
 img=image.get_attribute("src")
 description=driver.find_element(By.CLASS_NAME,"container").find_element(By.TAG_NAME,"h2").text
-content=driver.find_element(By.CLASS_NAME,"container").find_elements(By.TAG_NAME,"p")
+content=driver.find_element(By.CSS_SELECTOR,".news-content.readingTime").find_elements(By.TAG_NAME,"p")
 
 
 t=driver.find_element(By.CLASS_NAME,"news-inf").find_element(By.CLASS_NAME,"news-date")
